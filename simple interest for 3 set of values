@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+int P,R,T,SI;
+int i;
+for(i=1;i<=3;i++);
+{
+    printf("\nenter principal, rate and time for set %d: ",i);
+    scanf("%d%d%d, &P,&R,&T");
+    SI= (P*R*T)/100;
+    printf("simple interest for set %d=%d\n",i,SI);
+}
+}
