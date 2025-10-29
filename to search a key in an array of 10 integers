@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int arr[10];
+    int i, key, found = 0;
+
+    // Input 10 integers
+    printf("Enter 10 integers:\n");
+    for(i = 0; i < 10; i++) {
+        printf("Enter number %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    // Input the key to search
+    printf("\nEnter the key to search: ");
+    scanf("%d", &key);
+
+    // Search for the key in the array
+    for(i = 0; i < 10; i++) {
+        if(arr[i] == key) {
+            printf("\nKey %d found at position %d.\n", key, i + 1);
+            found = 1;
+            break;  // stop searching after finding the key
+        }
+    }
+
+    if(!found) {
+        printf("\nKey %d not found in the array.\n", key);
+    }
+
+    return 0;
+}
